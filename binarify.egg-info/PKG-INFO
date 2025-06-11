@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: binarify
+Version: 0.1.0
+Summary: Convert text and numbers to binary and back
+Home-page: https://github.com/mdmominulhaqueifti21/binarify
+Author: Md Mominul Haque Ifti
+Author-email: mdmominulhaqueifti21@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Binarify
+
+**Binarify** is a simple Python module that helps you convert English letters, words, or numbers into binary and convert them back into normal text.
+
+It supports:
+- Text to Binary
+- Binary to Text
+
+---
+
+## 📦 Installation
+
+Install this package directly using `pip`:
+
+```bash
+pip install binarify
+
+
+Here is a basic example of how to use Binarify:
+
+from binarify import Binarify
+
+# Create an instance of the converter
+b = Binarify()
+
+# Convert text to binary
+binary = b.to_binary("Hello")
+print("Binary:", binary)
+
+# Convert binary back to text
+text = b.from_binary(binary)
+print("Text:", text)
+
